@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>وكالة إدلب العز للسياحة والسفر والحج والعمرة | برامج عمرة تبدأ من 600$</title>
+  <meta name="description" content="وكالة إدلب العز للسياحة والسفر والحج والعمرة: برامج عمرة برّية VIP من إدلب إلى إدلب، حجز تذاكر الطيران، تأشيرات عالمية ورحلات سياحية. إدلب، سوق الصاغة، خلف جامع العمري.">
+  <meta name="theme-color" content="#064e3b">
+  <meta property="og:title" content="وكالة إدلب العز للسياحة والسفر والحج والعمرة">
+  <meta property="og:description" content="برامج عمرة تبدأ من 600$ تشمل الإقامة والنقل VIP والتأشيرة والجولات الإرشادية.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind (prototype build via CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom premium layer -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a href="#umrah" class="skip-link" data-i18n="skip">انتقل إلى المحتوى</a>
+
+  <!-- Shared SVG logo mark -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#ecd685"/>
+        <stop offset="1" stop-color="#b8921f"/>
+      </linearGradient>
+    </defs>
+    <symbol id="logo-mark" viewBox="0 0 48 48">
+      <rect x="1.5" y="1.5" width="45" height="45" rx="14" fill="#064e3b"/>
+      <rect x="1.5" y="1.5" width="45" height="45" rx="14" fill="none" stroke="url(#goldGrad)" stroke-opacity=".55"/>
+      <g fill="none" stroke="url(#goldGrad)" stroke-width="1.4">
+        <rect x="11" y="11" width="26" height="26"/>
+        <rect x="11" y="11" width="26" height="26" transform="rotate(45 24 24)"/>
+      </g>
+      <path d="M26 17.4a7.2 7.2 0 1 0 4.4 12.9 6.1 6.1 0 0 1-4.4-12.9z" fill="url(#goldGrad)"/>
+    </symbol>
+  </svg>
+
+  <!-- ============ 1. NAVBAR ============ -->
+  <header id="siteHeader" class="site-header fixed top-0 w-full z-50 backdrop-blur-md bg-white/70">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8 h-[72px] flex items-center justify-between gap-6">
+
+      <a href="#home" class="flex items-center gap-3 shrink-0" aria-label="إدلب العز">
+        <svg class="logo-mark" width="44" height="44" aria-hidden="true"><use href="#logo-mark"/></svg>
+        <span class="flex flex-col leading-none">
+          <span class="logo-word" data-i18n="brand_name">إدلب العز</span>
+          <span class="logo-sub" data-i18n="brand_sub">للسياحة والسفر والحج والعمرة</span>
+        </span>
+      </a>
+
+      <div class="flex items-center gap-2 lg:gap-8">
+        <nav class="hidden lg:flex items-center gap-7" aria-label="Main">
+          <a href="#home" class="nav-link" data-i18n="nav_home">الرئيسية</a>
+          <a href="#umrah" class="nav-link" data-i18n="nav_umrah">برامج الحج والعمرة</a>
+          <a href="#services" class="nav-link" data-i18n="nav_services">خدماتنا</a>
+          <a href="#booking" class="nav-link" data-i18n="nav_booking">حجز سريع</a>
+          <a href="#contact" class="nav-link" data-i18n="nav_contact">اتصل بنا</a>
+        </nav>
+
+        <button id="langToggle" type="button" class="lang-btn" data-i18n-aria="lang_aria" aria-label="تغيير اللغة">
+          <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          <span id="langLabel">EN</span>
+        </button>
+
+        <a href="#booking" class="btn btn-gold btn-sm hidden md:inline-flex">
+          <i class="fa-solid fa-kaaba" aria-hidden="true"></i>
+          <span data-i18n="nav_cta">احجز رحلتك الآن</span>
+        </a>
+
+        <button id="menuBtn" type="button" class="burger lg:hidden" aria-expanded="false" aria-controls="mobileMenu" data-i18n-aria="menu_aria" aria-label="القائمة">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="mobile-menu lg:hidden" aria-hidden="true">
+    <nav class="mm-links" aria-label="Mobile">
+      <a href="#home" class="mm-link" style="--i:1" data-i18n="nav_home">الرئيسية</a>
+      <a href="#umrah" class="mm-link" style="--i:2" data-i18n="nav_umrah">برامج الحج والعمرة</a>
+      <a href="#services" class="mm-link" style="--i:3" data-i18n="nav_services">خدماتنا</a>
+      <a href="#booking" class="mm-link" style="--i:4" data-i18n="nav_booking">حجز سريع</a>
+      <a href="#contact" class="mm-link" style="--i:5" data-i18n="nav_contact">اتصل بنا</a>
+    </nav>
+    <div class="mm-foot">
+      <a href="#booking" class="btn btn-gold w-full">
+        <i class="fa-solid fa-kaaba" aria-hidden="true"></i>
+        <span data-i18n="nav_cta">احجز رحلتك الآن</span>
+      </a>
+      <div class="grid grid-cols-2 gap-3 mt-3">
+        <a href="tel:+963936179628" class="btn btn-ghost" dir="ltr"><i class="fa-solid fa-phone" aria-hidden="true"></i><span>0936 179 628</span></a>
+        <a href="tel:+963981824687" class="btn btn-ghost" dir="ltr"><i class="fa-solid fa-phone" aria-hidden="true"></i><span>0981 824 687</span></a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ============ 2. HERO ============ -->
+    <section id="home" class="hero relative min-h-[100svh] flex items-center overflow-hidden pt-32 pb-36 lg:pt-36 lg:pb-40">
+      <div class="hero-bg absolute inset-0" aria-hidden="true"></div>
+      <div class="hero-pattern absolute inset-0" aria-hidden="true"></div>
+      <div class="hero-orb orb-1" aria-hidden="true"></div>
+      <div class="hero-orb orb-2" aria-hidden="true"></div>
+
+      <div class="hero-star-wrap" aria-hidden="true">
+        <svg class="hero-star" viewBox="0 0 400 400" fill="none" stroke="currentColor">
+          <circle cx="200" cy="200" r="196" stroke-width=".8"/>
+          <circle cx="200" cy="200" r="152" stroke-width=".7" stroke-dasharray="2 7"/>
+          <g stroke-width="1.2">
+            <rect x="64" y="64" width="272" height="272"/>
+            <rect x="64" y="64" width="272" height="272" transform="rotate(45 200 200)"/>
+          </g>
+          <g stroke-width=".9">
+            <rect x="108" y="108" width="184" height="184"/>
+            <rect x="108" y="108" width="184" height="184" transform="rotate(45 200 200)"/>
+          </g>
+          <circle cx="200" cy="200" r="46" stroke-width="1"/>
+          <circle cx="200" cy="200" r="5" fill="currentColor" stroke="none"/>
+        </svg>
+      </div>
+
+      <div class="relative z-10 w-full max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-12 gap-14 items-center">
+        <div class="lg:col-span-7">
+          <h1 class="hero-title">
+            <span class="hero-t block" data-i18n="hero_t1">رحلتك الإيمانية بروحانيةٍ تامة</span>
+            <span class="hero-t block" data-i18n="hero_t2">وطمأنينةٍ ترتقي بروحك</span>
+          </h1>
+
+          <div class="orn hero-t" aria-hidden="true"><i></i><b></b><i></i></div>
+
+          <p class="hero-sub" data-i18n="hero_sub">من إدلب إلى الحرمين الشريفين، نرتّب لك كل التفاصيل: الإقامة والنقل والتأشيرة والمرشد، لتتفرّغ للعبادة وتعود بقلبٍ مطمئن.</p>
+
+          <div class="hero-ctas flex flex-col sm:flex-row gap-4 mt-10">
+            <a href="#umrah" class="hero-cta btn btn-gold btn-lg btn-pulse">
+              <i class="fa-solid fa-kaaba" aria-hidden="true"></i>
+              <span data-i18n="hero_cta1">استكشف عروض العمرة الحالية</span>
+            </a>
+            <a href="https://wa.me/963936179628" target="_blank" rel="noopener" class="hero-cta btn btn-ghost btn-lg" data-wa-plain>
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              <span data-i18n="hero_cta2">تحدث مع مستشار السفر</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 hero-card-wrap">
+          <div class="hero-card">
+            <p class="hc-from" data-i18n="hero_card_from">تبدأ برامج العمرة من</p>
+            <div class="hc-price" dir="ltr"><sup>$</sup><span>600</span></div>
+            <p class="hc-note" data-i18n="hero_card_note">للفرد في الغرفة الرباعية</p>
+            <div class="hc-divider" aria-hidden="true"></div>
+            <ul class="hc-list">
+              <li><i class="fa-solid fa-kaaba" aria-hidden="true"></i><span data-i18n="hc1">9 ليالٍ في مكة المكرمة</span></li>
+              <li><i class="fa-solid fa-mosque" aria-hidden="true"></i><span data-i18n="hc2">3 ليالٍ في المدينة المنورة</span></li>
+              <li><i class="fa-solid fa-van-shuttle" aria-hidden="true"></i><span data-i18n="hc3">نقل VIP من إدلب إلى إدلب</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-edge" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ 3. FEATURED HAJJ & UMRAH ============ -->
+    <section id="umrah" class="relative py-20 lg:py-28 section-ivory">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+        <div class="grid lg:grid-cols-12 gap-6 lg:gap-12 items-end" data-reveal>
+          <h2 class="sec-title lg:col-span-6" data-i18n="pk_title">برامج العمرة المميزة</h2>
+          <p class="sec-lead lg:col-span-6" data-i18n="pk_sub">ثلاثة خيارات للإقامة بالبرنامج الكامل نفسه من فنادق ونقل وتأشيرة وجولات إرشادية. اختر الغرفة التي تناسب أسرتك وميزانيتك.</p>
+        </div>
+
+        <div class="grid gap-7 lg:grid-cols-3 mt-14 lg:mt-16 items-stretch">
+
+          <!-- Quad -->
+          <div data-reveal style="--d:.05s" class="flex">
+            <article class="pkg-card w-full">
+              <div class="flex items-start justify-between gap-3">
+                <span class="pkg-badge pkg-badge--eco"><i class="fa-solid fa-tag" aria-hidden="true"></i><span data-i18n="badge_eco">برنامج اقتصادي مميز</span></span>
+              </div>
+              <div class="pkg-room">
+                <span class="occ" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                <h3 data-i18n="room_quad">غرفة رباعية</h3>
+              </div>
+              <div class="pkg-price" dir="ltr"><sup>$</sup><span>600</span><em data-i18n="per_person">للفرد</em></div>
+              <ul class="pkg-list">
+                <li><span class="ico-sq"><i class="fa-solid fa-kaaba"></i></span><div><strong data-i18n="pk_f1">9 ليالٍ في مكة المكرمة</strong><small data-i18n="pk_f1s">فندق إيلاف بكة (محبس الجن)</small></div></li>
+                <li><span class="ico-sq"><i class="fa-solid fa-mosque"></i></span><div><strong data-i18n="pk_f2">3 ليالٍ في المدينة المنورة</strong><small data-i18n="pk_f2s">فنادق المنطقة المركزية</small></div></li>
+                <li><span class="ico-sq"><i class="fa-solid fa-van-shuttle"></i></span><div><strong data-i18n="pk_f3">نقل VIP من إدلب إلى إدلب</strong><small data-i18n="pk_f3s">رحلة برّية متكاملة ذهاباً وإياباً</small></div></li>
+                <li><span class="ico-sq"><i class="fa-solid fa-stamp"></i></span><div><strong data-i18n="pk_f4">تأشيرة العمرة</strong></div></li>
+                <li><span class="ico-sq"><i class="fa-solid fa-book-quran"></i></span><div><strong data-i18n="pk_f5">جولات إرشادية دينية</strong></div></li>
+                <li><span class="ico-sq"><i class="fa-solid fa-snowflake"></i></span><div><strong data-i18n="pk_f6">حافلات مكيّفة</strong></div></li>
+              </ul>
+              <button type="button" class="btn btn-emerald btn-book" data-book="quad">
+                <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+                <span data-i18n="pk_book">احجز مقعدك الآن</span>
+              </button>
+            </article>
+          </div>
+
+          <!-- Triple -->
+          <div data-reveal style="--d:.15s" class="flex">
+            <article class="pkg-card w-full">
+              <div class="flex items-start justify-between gap-3">
+                <span class="pkg-badge pkg-badge--mid"><i class="fa-solid fa-heart" aria-hidden="true"></i><span data-i18n="badge_mid">راحة متوازنة</span></span>
+              </div>
+              <div class="pkg-room">
+                <span class="occ" aria-hidden="true"><i></i><i></i><i></i></span>
+                <h3 data-i18n="room_triple">غرفة ثلاثية</h3>
+              </div>
+              <div class="pkg-price" dir="ltr"><sup>$</sup><span>675</span><em data-i18n="per_person">للفرد</em></div>
+              <ul class="pkg-list">
+                <li><span class="ico-sq"><i class="fa-solid fa-kaaba"></i></span><div><strong data-i18n="pk_f1">9 ليالٍ في مكة المكرمة</strong><small data-i18n="pk_f1s">فندق إيلاف بكة (محبس الجن)</small></div></li>
+                <li><span class="ico-sq"><i class="fa-solid fa-mosque"></i></span><div><strong data-i18n="pk_f2">3 ليالٍ في المدينة المنورة</strong><small data-i18n="pk_f2s">فنادق المنطقة المركزية</small></div></li>
+                <li><span class="ico-sq"><i class="fa-solid fa-van-shuttle"></i></span><div><strong data-i18n="pk_f3">نقل VIP من إدلب إلى إدلب</strong><small data-i18n="pk_f3s">رحلة برّية متكاملة ذهاباً وإياباً</small></div></li>
+                <li><span class="ico-sq"><i class="fa-solid fa-stamp"></i></span><div><strong data-i18n="pk_f4">تأشيرة العمرة</strong></div></li>
+                <li><span class="ico-sq"><i class="fa-solid fa-book-quran"></i></span><div><strong data-i18n="pk_f5">جولات إرشادية دينية</strong></div></li>
+                <li><span class="ico-sq"><i class="fa-solid fa-snowflake"></i></span><div><strong data-i18n="pk_f6">حافلات مكيّفة</strong></div></li>
+              </ul>
+              <button type="button" class="btn btn-emerald btn-book" data-book="triple">
+                <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+                <span data-i18n="pk_book">احجز مقعدك الآن</span>
+              </button>
+            </article>
+          </div>
+
+          <!-- Double / VIP -->
+          <div data-reveal style="--d:.25s" class="flex">
+            <article class="pkg-card pkg-card--vip w-full">
+              <div class="flex items-start justify-between gap-3">
+                <span class="pkg-badge pkg-badge--vip"><i class="fa-solid fa-crown" aria-hidden="true"></i><span data-i18n="badge_vip">رحلات VIP برّاً</span></span>
+              </div>
+              <div class="pkg-room">
+                <span class="occ" aria-hidden="true"><i></i><i></i></span>
+                <h3 data-i18n="room_double">غرفة ثنائية</h3>
+              </div>
+              <div class="pkg-price" dir="ltr"><sup>$</sup><span>750</span><em data-i18n="per_person">للفرد</em></div>
+              <ul class="pkg-list">
+                <li><span class="ico-sq"><i class="fa-solid fa-kaaba"></i></span><div><strong data-i18n="pk_f1">9 ليالٍ في مكة المكرمة</strong><small data-i18n="pk_f1s">فندق إيلاف بكة (محبس الجن)</small></div></li>
+                <li><span class="ico-sq"><i class="fa-solid fa-mosque"></i></span><div><strong data-i18n="pk_f2">3 ليالٍ في المدينة المنورة</strong><small data-i18n="pk_f2s">فنادق المنطقة المركزية</small></div></li>
+                <li><span class="ico-sq"><i class="fa-solid fa-van-shuttle"></i></span><div><strong data-i18n="pk_f3">نقل VIP من إدلب إلى إدلب</strong><small data-i18n="pk_f3s">رحلة برّية متكاملة ذهاباً وإياباً</small></div></li>
+                <li><span class="ico-sq"><i class="fa-solid fa-stamp"></i></span><div><strong data-i18n="pk_f4">تأشيرة العمرة</strong></div></li>
+                <li><span class="ico-sq"><i class="fa-solid fa-book-quran"></i></span><div><strong data-i18n="pk_f5">جولات إرشادية دينية</strong></div></li>
+                <li><span class="ico-sq"><i class="fa-solid fa-snowflake"></i></span><div><strong data-i18n="pk_f6">حافلات مكيّفة</strong></div></li>
+              </ul>
+              <button type="button" class="btn btn-gold btn-book" data-book="double">
+                <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+                <span data-i18n="pk_book">احجز مقعدك الآن</span>
+              </button>
+            </article>
+          </div>
+        </div>
+
+        <p class="pkg-note" data-reveal data-i18n="pk_note">تواصل معنا لتأكيد المقاعد المتاحة وموعد الانطلاق.</p>
+      </div>
+    </section>
+
+    <!-- ============ 4. OTHER SERVICES ============ -->
+    <section id="services" class="py-20 lg:py-28 section-sand">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-6 lg:gap-12 items-end" data-reveal>
+          <h2 class="sec-title lg:col-span-6" data-i18n="sv_title">خدمات سفر متكاملة</h2>
+          <p class="sec-lead lg:col-span-6" data-i18n="sv_sub">إلى جانب العمرة، نتولى ترتيب سفرك أينما كانت وجهتك.</p>
+        </div>
+
+        <div class="svc-grid mt-14 lg:mt-16" data-reveal>
+          <article class="svc">
+            <div class="svc-icon"><i class="fa-solid fa-plane-departure" aria-hidden="true"></i></div>
+            <h3 data-i18n="sv_air_t">حجز تذاكر الطيران</h3>
+            <p data-i18n="sv_air_d">نبحث لك عن الرحلة الأنسب بين شركات الطيران، ونتابع حجزك حتى موعد الإقلاع.</p>
+            <a href="#booking" class="svc-link" data-service="air"><span data-i18n="sv_link">اطلب الخدمة</span><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></a>
+          </article>
+          <article class="svc">
+            <div class="svc-icon"><i class="fa-solid fa-passport" aria-hidden="true"></i></div>
+            <h3 data-i18n="sv_visa_t">تأمين التأشيرات العالمية</h3>
+            <p data-i18n="sv_visa_d">نجهّز ملفك ونتابع معاملة التأشيرة خطوة بخطوة لتسافر بلا تعقيد.</p>
+            <a href="#booking" class="svc-link" data-service="visa"><span data-i18n="sv_link">اطلب الخدمة</span><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></a>
+          </article>
+          <article class="svc">
+            <div class="svc-icon"><i class="fa-solid fa-umbrella-beach" aria-hidden="true"></i></div>
+            <h3 data-i18n="sv_tour_t">الرحلات السياحية والإجازات</h3>
+            <p data-i18n="sv_tour_d">برامج سياحية وترفيهية مرتّبة بعناية للأفراد والعائلات والمجموعات.</p>
+            <a href="#booking" class="svc-link" data-service="tour"><span data-i18n="sv_link">اطلب الخدمة</span><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. QUICK BOOKING ============ -->
+    <section id="booking" class="booking relative py-20 lg:py-28 overflow-hidden">
+      <div class="booking-pattern absolute inset-0" aria-hidden="true"></div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+
+        <div class="lg:col-span-5 text-white" data-reveal>
+          <h2 class="sec-title sec-title--light" data-i18n="bk_title">احجز رحلتك في دقيقة</h2>
+          <p class="sec-lead sec-lead--light mt-5" data-i18n="bk_sub">املأ بياناتك وسيجهّز لك الموقع رسالة جاهزة على واتساب لنؤكّد معك التفاصيل.</p>
+
+          <ul class="bk-contact">
+            <li>
+              <span class="ico-sq ico-sq--gold"><i class="fa-solid fa-phone"></i></span>
+              <div>
+                <a href="tel:+963936179628" dir="ltr">+963 936 179 628</a>
+                <a href="tel:+963981824687" dir="ltr">+963 981 824 687</a>
+              </div>
+            </li>
+            <li>
+              <span class="ico-sq ico-sq--gold"><i class="fa-solid fa-location-dot"></i></span>
+              <div>
+                <strong data-i18n="bk_visit">زرنا في مكتبنا</strong>
+                <span data-i18n="ft_addr">إدلب، سوق الصاغة، خلف جامع العمري</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-7" data-reveal style="--d:.1s">
+          <div class="form-card">
+
+            <div class="tabs" role="tablist" data-active="umrah">
+              <span class="tab-pill" aria-hidden="true"></span>
+              <button type="button" role="tab" class="tab" id="tab-umrah" data-tab="umrah" aria-selected="true" aria-controls="bookingForm">
+                <i class="fa-solid fa-kaaba" aria-hidden="true"></i><span data-i18n="tab_umrah">حجز عمرة</span>
+              </button>
+              <button type="button" role="tab" class="tab" id="tab-other" data-tab="other" aria-selected="false" aria-controls="bookingForm">
+                <i class="fa-solid fa-plane" aria-hidden="true"></i><span data-i18n="tab_other">حجز تذاكر وسياحة</span>
+              </button>
+            </div>
+
+            <form id="bookingForm" novalidate role="tabpanel" aria-labelledby="tab-umrah" class="mt-8">
+              <div class="grid sm:grid-cols-2 gap-x-5 gap-y-1">
+
+                <div class="field" data-rule="name">
+                  <label for="f-name" data-i18n="f_name">الاسم الكامل</label>
+                  <div class="control has-status">
+                    <i class="fa-regular fa-user" aria-hidden="true"></i>
+                    <input id="f-name" name="name" type="text" autocomplete="name" data-i18n-ph="ph_name" placeholder="مثال: أحمد محمد العلي">
+                  </div>
+                  <p class="msg" role="alert"></p>
+                </div>
+
+                <div class="field" data-rule="phone">
+                  <label for="f-phone" data-i18n="f_phone">رقم الهاتف</label>
+                  <div class="control has-status">
+                    <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                    <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" placeholder="+963 9XX XXX XXX">
+                  </div>
+                  <p class="msg" role="alert"></p>
+                </div>
+
+                <div class="field" data-rule="dest">
+                  <label for="f-dest" data-i18n="f_dest">الوجهة</label>
+                  <div class="control has-status">
+                    <i class="fa-solid fa-location-crosshairs" aria-hidden="true"></i>
+                    <input id="f-dest" name="dest" type="text" readonly>
+                  </div>
+                  <p class="msg" role="alert"></p>
+                </div>
+
+                <div class="field" data-rule="pkg">
+                  <label for="f-pkg" id="f-pkg-label" data-i18n="f_pkg_umrah">نوع الغرفة</label>
+                  <div class="control">
+                    <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                    <select id="f-pkg" name="pkg"></select>
+                  </div>
+                  <p class="msg" role="alert"></p>
+                </div>
+
+                <div class="field sm:col-span-2" data-rule="date">
+                  <label for="f-date" data-i18n="f_date">تاريخ السفر المفضّل</label>
+                  <div class="control has-status">
+                    <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                    <input id="f-date" name="date" type="date">
+                  </div>
+                  <p class="msg" role="alert"></p>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-gold btn-lg w-full mt-4 submit-btn">
+                <span class="spin" aria-hidden="true"></span>
+                <i class="fa-brands fa-whatsapp lbl-ico" aria-hidden="true"></i>
+                <span class="lbl" data-i18n="bk_submit">أرسل طلب الحجز</span>
+              </button>
+            </form>
+
+            <div class="done" id="bookingDone" hidden>
+              <svg class="done-check" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24" fill="none"/><path d="M15 27l8 8 14-16" fill="none"/></svg>
+              <h3 data-i18n="ok_title">تم تجهيز طلبك</h3>
+              <p data-i18n="ok_text">بقيت خطوة واحدة: اضغط الزر لإرسال طلبك إلى مستشارنا عبر واتساب.</p>
+              <a id="bookingWA" href="#" target="_blank" rel="noopener" class="btn btn-gold btn-lg w-full">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span data-i18n="ok_wa">أكمل عبر واتساب</span>
+              </a>
+              <button type="button" class="link-btn" id="bookingAgain" data-i18n="ok_again">طلب جديد</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 7. FOOTER ============ -->
+  <footer id="contact" class="site-footer relative pt-20 lg:pt-24 pb-28 lg:pb-10">
+    <div class="footer-pattern absolute inset-0" aria-hidden="true"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="grid gap-12 lg:grid-cols-12">
+
+        <div class="lg:col-span-5">
+          <div class="flex items-center gap-3">
+            <svg class="logo-mark" width="52" height="52" aria-hidden="true"><use href="#logo-mark"/></svg>
+            <span class="flex flex-col leading-none">
+              <span class="logo-word logo-word--light" data-i18n="brand_name">إدلب العز</span>
+              <span class="logo-sub logo-sub--light" data-i18n="brand_sub">للسياحة والسفر والحج والعمرة</span>
+            </span>
+          </div>
+          <h3 class="ft-tag" data-i18n="ft_tag">إدلب العز: ثقة وتميّز في خدمات العمرة والسفر</h3>
+          <p class="ft-bio" data-i18n="ft_bio">نرافق ضيوف الرحمن من إدلب إلى الحرمين الشريفين برحلات منظّمة وأسعار واضحة وفريق يضع راحتك وطمأنينتك أولاً. ونوفّر لك كذلك حجوزات الطيران والتأشيرات والرحلات السياحية.</p>
+        </div>
+
+        <div class="lg:col-span-3">
+          <h4 class="ft-head" data-i18n="ft_links">روابط سريعة</h4>
+          <ul class="ft-list">
+            <li><a href="#home" class="ft-link" data-i18n="nav_home">الرئيسية</a></li>
+            <li><a href="#umrah" class="ft-link" data-i18n="nav_umrah">برامج الحج والعمرة</a></li>
+            <li><a href="#services" class="ft-link" data-i18n="nav_services">خدماتنا</a></li>
+            <li><a href="#booking" class="ft-link" data-i18n="nav_booking">حجز سريع</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-4">
+          <h4 class="ft-head" data-i18n="ft_contact">تواصل معنا</h4>
+          <ul class="ft-contact">
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span data-i18n="ft_addr">إدلب، سوق الصاغة، خلف جامع العمري</span></li>
+            <li><i class="fa-solid fa-phone" aria-hidden="true"></i><span><a href="tel:+963936179628" dir="ltr">+963 936 179 628</a></span></li>
+            <li><i class="fa-solid fa-phone" aria-hidden="true"></i><span><a href="tel:+963981824687" dir="ltr">+963 981 824 687</a></span></li>
+            <li><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span><a href="https://wa.me/963936179628" target="_blank" rel="noopener" data-wa-plain dir="ltr">WhatsApp</a></span></li>
+          </ul>
+          <div class="flex gap-3 mt-6" aria-label="Social">
+            <a href="#" class="social" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.me/963936179628" target="_blank" rel="noopener" class="social" aria-label="WhatsApp" data-wa-plain><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="ft-bottom">
+        <p>&copy; <span id="year">2026</span> <span data-i18n="ft_rights">جميع الحقوق محفوظة لوكالة إدلب العز للسياحة والسفر والحج والعمرة.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ BOOKING MODAL (package cards) ============ -->
+  <div id="bookModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel">
+      <button type="button" class="modal-x" data-close data-i18n-aria="close" aria-label="إغلاق"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+
+      <div id="modalBody">
+        <h3 id="modalTitle" class="modal-title" data-i18n="md_title">احجز مقعدك</h3>
+        <p class="modal-sub" data-i18n="md_sub">أكّد اختيارك وسنكمل الباقي معك على واتساب.</p>
+
+        <div class="modal-chip" id="modalChip" aria-live="polite"></div>
+
+        <form id="modalForm" novalidate>
+          <div class="field" data-rule="name">
+            <label for="m-name" data-i18n="f_name">الاسم الكامل</label>
+            <div class="control has-status">
+              <i class="fa-regular fa-user" aria-hidden="true"></i>
+              <input id="m-name" name="name" type="text" autocomplete="name" data-i18n-ph="ph_name" placeholder="مثال: أحمد محمد العلي">
+            </div>
+            <p class="msg" role="alert"></p>
+          </div>
+
+          <div class="field" data-rule="phone">
+            <label for="m-phone" data-i18n="f_phone">رقم الهاتف</label>
+            <div class="control has-status">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <input id="m-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" placeholder="+963 9XX XXX XXX">
+            </div>
+            <p class="msg" role="alert"></p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-5">
+            <div class="field" data-rule="pkg">
+              <label for="m-pkg" data-i18n="f_pkg_umrah">نوع الغرفة</label>
+              <div class="control">
+                <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                <select id="m-pkg" name="pkg">
+                  <option value="quad" data-i18n="opt_quad">غرفة رباعية: 600$</option>
+                  <option value="triple" data-i18n="opt_triple">غرفة ثلاثية: 675$</option>
+                  <option value="double" data-i18n="opt_double">غرفة ثنائية: 750$</option>
+                </select>
+              </div>
+              <p class="msg" role="alert"></p>
+            </div>
+
+            <div class="field" data-rule="date">
+              <label for="m-date" data-i18n="f_date">تاريخ السفر المفضّل</label>
+              <div class="control has-status">
+                <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                <input id="m-date" name="date" type="date">
+              </div>
+              <p class="msg" role="alert"></p>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-gold btn-lg w-full mt-3 submit-btn">
+            <span class="spin" aria-hidden="true"></span>
+            <i class="fa-brands fa-whatsapp lbl-ico" aria-hidden="true"></i>
+            <span class="lbl" data-i18n="bk_submit">أرسل طلب الحجز</span>
+          </button>
+        </form>
+      </div>
+
+      <div class="done" id="modalDone" hidden>
+        <svg class="done-check" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24" fill="none"/><path d="M15 27l8 8 14-16" fill="none"/></svg>
+        <h3 data-i18n="ok_title">تم تجهيز طلبك</h3>
+        <p data-i18n="ok_text">بقيت خطوة واحدة: اضغط الزر لإرسال طلبك إلى مستشارنا عبر واتساب.</p>
+        <a id="modalWA" href="#" target="_blank" rel="noopener" class="btn btn-gold btn-lg w-full">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span data-i18n="ok_wa">أكمل عبر واتساب</span>
+        </a>
+        <button type="button" class="link-btn" data-close data-i18n="close">إغلاق</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ 6. FLOATING ELEMENTS ============ -->
+  <a id="waFloat" class="wa-float" href="https://wa.me/963936179628" target="_blank" rel="noopener" data-wa-plain aria-label="WhatsApp">
+    <span class="wa-tip" id="waTip" data-i18n="wa_tip">تحدث معنا على واتساب</span>
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <div class="m-bar lg:hidden">
+    <a href="tel:+963936179628" class="btn btn-ghost-dark">
+      <i class="fa-solid fa-phone" aria-hidden="true"></i><span data-i18n="mb_call">اتصل بنا</span>
+    </a>
+    <a href="#booking" class="btn btn-gold">
+      <i class="fa-regular fa-calendar-check" aria-hidden="true"></i><span data-i18n="mb_book">احجز الآن</span>
+    </a>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
